@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+.grid-container {
+display: grid;
+border: 1px solid #999;
+grid-template-columns: repeat(3, 152px);
+width: 456px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.grid-item {
+background-color: #ccc;
+border: 1px solid #999;
+height: 150px;
+font-family: 'Roboto', sans-serif;
+text-align: center;
+line-height: 150px;
+font-size: 150px;
+}
+
+
+.player1 {
+    background-color: green;
+}
+
+.player2 {
+    background-color: red;
+}
+
+span {
+    font-size: 50px;
+}
+
+
+.yellow {
+    background-color: yellow;
+}
+
+svg {
+    position: absolute;
+    display: none;
+}
+

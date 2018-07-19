@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <button type="button" class="btn btn-danger" id="reset">Recommencer</button>
+        
+        <input type="text" name="playerName" id="playerName">
+        <p id="playerDisplay" class="mt-4"></p>
+        <div id="jeu" class="grid-container">
+            <svg width="456" height="456">
+                <!-- DIAGONALS yellow strikethrough -->
+                <line x1="30" y1="30" x2="426" y2="426" stroke-width="10" id="line1"/>
+                <line x1="30" y1="426" x2="426" y2="30" stroke-width="10" id="line2"/>
+                <!-- HORIZONTALS yellow strikethrough           -->
+                <line x1="30" y1="76" x2="426" y2="76" stroke-width="10" id="line3"/>
+                <line x1="30" y1="228" x2="426" y2="228" stroke-width="10" id="line4"/>
+                <line x1="30" y1="380" x2="426" y2="380" stroke-width="10" id="line5"/>
+                <!-- VERTICALS yellow strikethrough -->
+                <line x1="76" y1="30" x2="76" y2="426" stroke-width="10" id="line6"/>
+                <line x1="228" y1="30" x2="228" y2="426" stroke-width="10" id="line7"/>
+                <line x1="380" y1="30" x2="380" y2="426" stroke-width="10" id="line8"/>
+            </svg>
+            <div id="A" class="grid-item"></div>
+            <div id="B" class="grid-item"></div>
+            <div id="C" class="grid-item"></div>
+            <div id="D" class="grid-item"></div>
+            <div id="E" class="grid-item"></div>
+            <div id="F" class="grid-item"></div>
+            <div id="G" class="grid-item"></div>
+            <div id="H" class="grid-item"></div>
+            <div id="I" class="grid-item"></div>
+        </div>
+    </div>
+</body>
+</html>
